@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Homenagem ao Dia do Técnico de Informática - 19 de Outubro. Celebre os heróis da tecnologia com trocadilhos, dicas e muito mais!">
+  <meta name="keywords" content="Dia do Técnico de Informática, 19 de outubro, tecnologia, TI, informática, homenagem">
+  <meta name="author" content="Homenagem Tech">
+  <title>🖥️ Dia do Técnico de Informática | 19 de Outubro</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated Particles Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Tech<span>Hero</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#trocadilhos">Trocadilhos</a></li>
+        <li><a href="#evolucao">Evolução</a></li>
+        <li><a href="#dicas">Dicas</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <img src="img/hero_technician.jpg" alt="Técnico de Informática Herói">
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        19 de Outubro — Dia do Técnico de Informática
+      </div>
+      <h1>
+        Salve o <span class="highlight"><span class="typed-text"></span></span>
+      </h1>
+      <p class="hero-subtitle">
+        Eles reiniciam computadores, salvam HDs e traduzem "linguagem técnica" para meros mortais. 
+        Hoje é o dia de homenagear os verdadeiros heróis sem capa — mas com chave de fenda! 🔧
+      </p>
+      <div class="hero-date">📅 19.10.2026 — Feliz Dia!</div>
+      <div class="hero-cta">
+        <a href="#trocadilhos" class="btn btn-primary">😂 Ver Trocadilhos</a>
+        <a href="#quiz" class="btn btn-outline">🧠 Fazer o Quiz</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE / ABOUT ===== -->
+  <section class="about" id="sobre">
+    <div class="section-container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-label">Conheça a data</div>
+        <h2 class="section-title">O que é o <span class="accent">Dia do Técnico</span>?</h2>
+        <p class="section-description">
+          Uma data para celebrar os profissionais que mantêm o mundo digital funcionando.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image animate-on-scroll">
+          <img src="img/server_room.jpg" alt="Sala de servidores">
+        </div>
+        <div class="about-text animate-on-scroll delay-2">
+          <h3>Os guardiões invisíveis da tecnologia 🛡️</h3>
+          <p>
+            O <strong>Dia do Técnico de Informática</strong> é celebrado em <strong>19 de outubro</strong> no Brasil. 
+            A data homenageia os profissionais que trabalham na manutenção, reparo e configuração de 
+            computadores, redes e sistemas — aqueles que transformam o caos digital em ordem!
+          </p>
+          <p>
+            A profissão surgiu com a popularização dos computadores pessoais nos anos 80 e 90, e 
+            desde então se tornou essencial em todos os setores da sociedade. Sem eles, a internet 
+            seria só uma "inter-nada"! 😄
+          </p>
+          <p>
+            Seja em grandes data centers ou na casa da sua avó que "não consegue abrir o e-mail", 
+            o técnico de informática está lá — sempre pronto para reiniciar, formatar e salvar o dia! 
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-card animate-on-scroll delay-3">
+              <div class="stat-number" data-target="500" data-suffix="K+">0</div>
+              <div class="stat-label">Profissionais no Brasil</div>
+            </div>
+            <div class="stat-card animate-on-scroll delay-4">
+              <div class="stat-number" data-target="1980" data-suffix="">0</div>
+              <div class="stat-label">Início da profissão</div>
+            </div>
+            <div class="stat-card animate-on-scroll delay-5">
+              <div class="stat-number" data-target="100" data-suffix="%">0</div>
+              <div class="stat-label">Essenciais para a TI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TROCADILHOS / PUNS ===== -->
+  <section class="puns" id="trocadilhos">
+    <div class="section-container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-label">Humor Tech</div>
+        <h2 class="section-title">Trocadilhos de <span class="accent">Informática</span> 😂</h2>
+        <p class="section-description">
+          Clique nos cards para revelar a punchline! Porque um técnico sem humor é como um PC sem memória RAM.
+        </p>
+      </div>
+
+      <div class="puns-grid">
+        <!-- Pun 1 -->
+        <div class="pun-card animate-on-scroll delay-1">
+          <span class="pun-emoji">💾</span>
+          <h4 class="pun-title">O técnico romântico</h4>
+          <p class="pun-text">Por que o técnico de informática é o melhor namorado?</p>
+          <p class="pun-punchline">Porque ele sempre faz <strong>backup</strong> dos momentos especiais e nunca deixa o relacionamento <strong>travar</strong>! 💕</p>
+        </div>
+
+        <!-- Pun 2 -->
+        <div class="pun-card animate-on-scroll delay-2">
+          <span class="pun-emoji">🔌</span>
+          <h4 class="pun-title">Diagnóstico universal</h4>
+          <p class="pun-text">Qual é a primeira solução do técnico para qualquer problema?</p>
+          <p class="pun-punchline">"Já tentou <strong>desligar e ligar</strong> de novo?" — Funciona em 90% dos casos... e nos outros 10%, funciona na segunda tentativa! 🔄</p>
+        </div>
+
+        <!-- Pun 3 -->
+        <div class="pun-card animate-on-scroll delay-3">
+          <span class="pun-emoji">🤖</span>
+          <h4 class="pun-title">Identidade técnica</h4>
+          <p class="pun-text">Como o técnico de informática se apresenta na festa?</p>
+          <p class="pun-punchline">"Oi, eu sou <strong>full stack</strong>... cheio de problemas pra resolver, de cima a baixo!" 📚</p>
+        </div>
+
+        <!-- Pun 4 -->
+        <div class="pun-card animate-on-scroll delay-4">
+          <span class="pun-emoji">☕</span>
+          <h4 class="pun-title">O combustível oficial</h4>
+          <p class="pun-text">Qual a diferença entre um técnico e uma máquina de café?</p>
+          <p class="pun-punchline">A máquina de café para de funcionar quando acaba o café. O técnico continua funcionando na base do <strong>Java</strong>! ☕💻</p>
+        </div>
+
+        <!-- Pun 5 -->
+        <div class="pun-card animate-on-scroll delay-5">
+          <span class="pun-emoji">🕷️</span>
+          <h4 class="pun-title">Bug life</h4>
+          <p class="pun-text">Por que o técnico não tem medo de aranhas?</p>
+          <p class="pun-punchline">Porque ele já está acostumado a lidar com <strong>bugs</strong> o dia inteiro! E os da web são os piores! 🕸️</p>
+        </div>
+
+        <!-- Pun 6 -->
+        <div class="pun-card animate-on-scroll delay-6">
+          <span class="pun-emoji">🧠</span>
+          <h4 class="pun-title">Memória seletiva</h4>
+          <p class="pun-text">Por que o técnico esquece o aniversário de casamento?</p>
+          <p class="pun-punchline">Porque toda a <strong>memória RAM</strong> dele está ocupada pensando em qual driver instalar! Precisa de um <strong>upgrade</strong>! 💍</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EVOLUÇÃO / TIMELINE ===== -->
+  <section class="evolution" id="evolucao">
+    <div class="section-container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-label">Linha do Tempo</div>
+        <h2 class="section-title">A <span class="accent">Evolução</span> da Informática</h2>
+        <p class="section-description">
+          De válvulas a inteligência artificial — uma jornada incrível que os técnicos acompanharam de perto!
+        </p>
+      </div>
+
+      <div class="evolution-banner animate-on-scroll">
+        <img src="img/evolution_computers.jpg" alt="Evolução dos computadores ao longo das décadas">
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">1940–1960</div>
+          <div class="timeline-title">🔬 A Era das Válvulas</div>
+          <div class="timeline-desc">Os primeiros computadores eram gigantes — ocupavam salas inteiras e tinham menos poder de processamento que seu celular! O ENIAC pesava 30 toneladas. Imagine dar manutenção nisso! 😅</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">1970–1980</div>
+          <div class="timeline-title">🖥️ Computadores Pessoais</div>
+          <div class="timeline-desc">Com o Apple II e o IBM PC, os computadores chegaram às casas. E com eles, vieram os primeiros "técnicos de bairro" — verdadeiros heróis da vizinhança!</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">1990</div>
+          <div class="timeline-title">🌐 A Internet chega ao Brasil</div>
+          <div class="timeline-desc">O som do modem discado (piiiiiiii) se tornou trilha sonora. Os técnicos agora precisavam configurar conexões dial-up e explicar que "não pode usar o telefone enquanto navega"!</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2000–2010</div>
+          <div class="timeline-title">📱 A Revolução Mobile</div>
+          <div class="timeline-desc">Notebooks, tablets e smartphones mudaram tudo. O técnico passou a ser "o cara que configura o Wi-Fi da festa" e "o sobrinho que arruma o celular da tia".</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2010–Presente</div>
+          <div class="timeline-title">☁️ Cloud, IA e Além</div>
+          <div class="timeline-desc">Computação em nuvem, inteligência artificial e IoT. O técnico moderno precisa saber de tudo — de hardware a machine learning. Verdadeiros super-heróis digitais! 🦸</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DICAS / TIPS ===== -->
+  <section class="tips" id="dicas">
+    <div class="section-container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-label">Aprenda com os Pros</div>
+        <h2 class="section-title">Dicas de <span class="accent">Ouro</span> do Técnico 💡</h2>
+        <p class="section-description">
+          Conhecimentos essenciais que todo técnico domina — e agora você também pode aprender!
+        </p>
+      </div>
+
+      <div class="tips-intro">
+        <div class="tips-image animate-on-scroll">
+          <img src="img/teaching_tech.jpg" alt="Técnico ensinando fundamentos de TI">
+        </div>
+        <div class="animate-on-scroll delay-2">
+          <h3 style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; margin-bottom: 1rem;">Conhecimento é poder (de processamento) ⚡</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+            Todo bom técnico sabe que prevenir é melhor que formatar! Essas dicas vão te ajudar 
+            a manter seu computador saudável e evitar aquela ligação desesperada: "Socorro, meu PC travou!" 
+          </p>
+          <p style="color: var(--text-secondary);">
+            Lembre-se: um técnico não nasce sabendo tudo. Ele aprende errando, pesquisando no Google 
+            e tomando muito café. Muuuito café! ☕
+          </p>
+        </div>
+      </div>
+
+      <div class="tips-grid">
+        <div class="tip-card animate-on-scroll delay-1">
+          <div class="tip-icon">🔄</div>
+          <h4>Reiniciar resolve 90% dos problemas</h4>
+          <p>
+            Não é piada — reiniciar o computador limpa a memória RAM, encerra processos travados 
+            e restaura serviços. Antes de entrar em pânico, <strong>reinicie</strong>!
+          </p>
+          <span class="tip-tag">Hardware & Software</span>
+        </div>
+
+        <div class="tip-card animate-on-scroll delay-2">
+          <div class="tip-icon">💾</div>
+          <h4>Faça backup regularmente</h4>
+          <p>
+            Use a regra 3-2-1: tenha <strong>3 cópias</strong> dos seus dados, em <strong>2 tipos de mídia</strong> 
+            diferentes, com <strong>1 cópia offsite</strong> (na nuvem). HD externo + nuvem é a combo perfeita!
+          </p>
+          <span class="tip-tag">Segurança de Dados</span>
+        </div>
+
+        <div class="tip-card animate-on-scroll delay-3">
+          <div class="tip-icon">🌡️</div>
+          <h4>Cuide da temperatura</h4>
+          <p>
+            Limpe a poeira do cooler a cada 6 meses. Superaquecimento é o vilão nº 1 dos notebooks! 
+            Use pasta térmica de qualidade e nunca bloqueie as saídas de ar.
+          </p>
+          <span class="tip-tag">Manutenção Preventiva</span>
+        </div>
+
+        <div class="tip-card animate-on-scroll delay-4">
+          <div class="tip-icon">🛡️</div>
+          <h4>Antivírus + bom senso</h4>
+          <p>
+            O melhor antivírus é o <strong>bom senso</strong>: não clique em links suspeitos, 
+            não baixe "crack" de programas e mantenha o sistema atualizado. Windows Defender já ajuda bastante!
+          </p>
+          <span class="tip-tag">Segurança Digital</span>
+        </div>
+
+        <div class="tip-card animate-on-scroll delay-5">
+          <div class="tip-icon">⌨️</div>
+          <h4>Atalhos de teclado são superpoderes</h4>
+          <p>
+            <strong>Ctrl+Z</strong> = Desfazer | <strong>Ctrl+Shift+T</strong> = Reabrir aba fechada | 
+            <strong>Win+L</strong> = Bloquear PC | <strong>Alt+F4</strong> = Fechar programa. 
+            Domine esses e vire um ninja digital! 🥷
+          </p>
+          <span class="tip-tag">Produtividade</span>
+        </div>
+
+        <div class="tip-card animate-on-scroll delay-6">
+          <div class="tip-icon">🔧</div>
+          <h4>Monte um kit de ferramentas</h4>
+          <p>
+            Todo técnico precisa: chave Phillips, chave de fenda, pulseira antiestática, 
+            pasta térmica, pen drive bootável e — o mais importante — <strong>paciência infinita</strong>! 😂
+          </p>
+          <span class="tip-tag">Ferramentas Essenciais</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIA ===== -->
+  <section class="gallery" id="galeria">
+    <div class="section-container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-label">Galeria</div>
+        <h2 class="section-title">A <span class="accent">Vida</span> de um Técnico</h2>
+        <p class="section-description">
+          Da bancada de trabalho à sala de servidores — clique para ampliar!
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item animate-on-scroll delay-1">
+          <img src="img/hero_technician.jpg" alt="Técnico herói da informática">
+          <div class="gallery-overlay">
+            <div>
+              <h4>O Herói Tech</h4>
+              <p>Pronto para salvar qualquer sistema!</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item animate-on-scroll delay-2">
+          <img src="img/tools_workbench.jpg" alt="Bancada com ferramentas de reparo">
+          <div class="gallery-overlay">
+            <div>
+              <h4>Arsenal do Técnico</h4>
+              <p>Cada ferramenta, um superpoder diferente</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item animate-on-scroll delay-3">
+          <img src="img/server_room.jpg" alt="Sala de servidores iluminada">
+          <div class="gallery-overlay">
+            <div>
+              <h4>A Fortaleza Digital</h4>
+              <p>Onde a mágica da internet acontece</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item animate-on-scroll delay-4">
+          <img src="img/funny_tech_support.jpg" alt="Suporte técnico divertido">
+          <div class="gallery-overlay">
+            <div>
+              <h4>A Realidade do Suporte</h4>
+              <p>Quando o cliente diz "não fiz nada, travou sozinho"</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item animate-on-scroll delay-5">
+          <img src="img/teaching_tech.jpg" alt="Técnico ensinando TI">
+          <div class="gallery-overlay">
+            <div>
+              <h4>Compartilhando Conhecimento</h4>
+              <p>O verdadeiro técnico ensina e inspira</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUIZ ===== -->
+  <section class="quiz" id="quiz">
+    <div class="section-container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-label">Teste seus Conhecimentos</div>
+        <h2 class="section-title">Quiz: Você é um <span class="accent">Técnico</span>? 🧠</h2>
+        <p class="section-description">
+          Descubra se você tem o conhecimento de um verdadeiro técnico de informática!
+        </p>
+      </div>
+
+      <div class="quiz-container animate-on-scroll">
+        <div class="quiz-progress">
+          <div class="step"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+        </div>
+
+        <div class="quiz-question"></div>
+        <div class="quiz-options"></div>
+        <div class="quiz-feedback"></div>
+
+        <div class="quiz-actions">
+          <button class="btn btn-primary" id="quiz-next" style="display:none;">Próxima →</button>
+        </div>
+
+        <div class="quiz-result">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🏆</div>
+          <div class="quiz-score"></div>
+          <p class="quiz-score-label"></p>
+          <button class="btn btn-primary" id="quiz-restart" style="margin-top: 1.5rem;">🔄 Tentar Novamente</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">⚡ Tech<span>Hero</span></div>
+      <p class="footer-tagline">
+        Homenageando os profissionais que mantêm o mundo conectado — 
+        um Ctrl+Alt+Del de cada vez! 🖥️
+      </p>
+      <div class="footer-links">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#trocadilhos">Trocadilhos</a>
+        <a href="#evolucao">Evolução</a>
+        <a href="#dicas">Dicas</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#quiz">Quiz</a>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 TechHero — Dia do Técnico de Informática</p>
+        <p class="footer-made-with">
+          Feito com <span class="heart">❤️</span> e muito café ☕ por técnicos, para técnicos
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox-close" aria-label="Fechar">✕</button>
+    <img src="" alt="Imagem ampliada">
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
